@@ -1,4 +1,4 @@
-$fair-color: #eee;
+$fair-color: #fff;
 $dark-color: #111;
 $special-color: #4386f2;
 $focused-special-color: #3577e0;
@@ -10,6 +10,8 @@ $fair-font-color: #fff;
 * {
     box-sizing: border-box;
 }
+
+button:focus {outline: none;}
 
 a {
     color: $primary-font-color;
@@ -30,6 +32,12 @@ body {
     .bckBtn {
         position: fixed;
         right: 2%;
+        display: none;
+        background: none;
+        border: 1px solid fair-color;
+        color: $fair-font-color;
+        font-family: oswald;
+        text-transform: uppercase;
     }
     .bckTop {
         top: 20px;

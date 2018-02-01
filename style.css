@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
 
+button:focus {
+  outline: none; }
+
 a {
   color: #222; }
 
@@ -16,14 +19,20 @@ body {
   background: #111; }
   body .bckBtn {
     position: fixed;
-    right: 2%; }
+    right: 2%;
+    display: none;
+    background: none;
+    border: 1px solid fair-color;
+    color: #fff;
+    font-family: oswald;
+    text-transform: uppercase; }
   body .bckTop {
     top: 20px; }
   body .bckBottom {
     bottom: 20px; }
   body header, body nav, body section, body footer {
     float: left;
-    background: #eee; }
+    background: #fff; }
   body header {
     width: 100%;
     text-align: center; }
