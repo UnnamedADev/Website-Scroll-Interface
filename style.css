@@ -1,3 +1,9 @@
+body .bckBtn, body .autoBtn, body .cfg, body .cfg button {
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: oswald;
+  text-transform: uppercase; }
+
 * {
   box-sizing: border-box; }
 
@@ -18,18 +24,46 @@ body, html, ul, ol {
 body {
   background: #111; }
   body .bckBtn {
-    position: fixed;
-    right: 2%;
+    right: 1%;
     display: none;
-    background: none;
-    border: 1px solid fair-color;
-    color: #fff;
-    font-family: oswald;
-    text-transform: uppercase; }
+    position: fixed;
+    background: none; }
+    body .bckBtn:hover {
+      background: rgba(255, 255, 255, 0.1); }
   body .bckTop {
-    top: 20px; }
+    top: 5%; }
   body .bckBottom {
-    bottom: 20px; }
+    bottom: 1%; }
+  body .autoBtn {
+    position: fixed;
+    right: 1%;
+    top: 1%;
+    background: #111; }
+  body .cfg {
+    position: fixed;
+    text-align: center;
+    left: 1%;
+    background: #111;
+    top: 27%;
+    display: none; }
+    body .cfg h5 {
+      margin: 0px 0px; }
+    body .cfg button {
+      background: none;
+      margin: 5px 4px; }
+      body .cfg button:hover {
+        background: rgba(255, 255, 255, 0.1); }
+    body .cfg #activeBttn {
+      color: #f4bd3d;
+      border-color: #f4bd3d; }
+    body .cfg .scrollStrt {
+      border-color: #329b12;
+      color: #329b12; }
+    body .cfg .scrollStp {
+      border-color: #9b1111;
+      color: #9b1111; }
+    body .cfg .scrollTop, body .cfg .scrollBottom {
+      margin: 0px; }
   body header, body nav, body section, body footer {
     float: left;
     background: #fff; }

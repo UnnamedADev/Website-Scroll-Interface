@@ -7,6 +7,16 @@ $primary-font-color: #222;
 $secondary-font-color: #444;
 $fair-font-color: #fff;
 
+$agree: #329b12;
+$disagree: #9b1111;
+$mark: #f4bd3d;
+%btns {
+    border: 2px solid $fair-color;
+    color: $fair-font-color;
+    font-family: oswald;
+    text-transform: uppercase;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -30,20 +40,65 @@ body {
     background: $dark-color;
     
     .bckBtn {
-        position: fixed;
-        right: 2%;
+        right: 1%;
         display: none;
+        position: fixed;
+        @extend %btns;
         background: none;
-        border: 1px solid fair-color;
-        color: $fair-font-color;
-        font-family: oswald;
-        text-transform: uppercase;
+        &:hover {
+            background: rgba(255,255,255,0.1);
+        }
     }
     .bckTop {
-        top: 20px;
+        top: 5%;
     }
     .bckBottom {
-        bottom: 20px;
+        bottom: 1%;
+    }
+    .autoBtn {
+        position: fixed;
+        right: 1%; top: 1%;
+        background: $dark-color;
+        @extend %btns;
+        
+    }
+
+    .cfg {
+        position: fixed;
+        @extend %btns;
+        text-align: center;
+        left: 1%;
+        background: $dark-color;
+        top: 27%;
+        display: none;
+        
+        h5 {
+            margin: 0px 0px;
+        }
+        button {
+            @extend %btns;
+            background: none;
+            margin: 5px 4px;
+            
+            &:hover {
+                background: rgba(255,255,255,0.1);
+            }
+        }
+        #activeBttn {
+            color: $mark;
+            border-color: #f4bd3d;
+        }
+        .scrollStrt {
+            border-color: $agree;
+            color: $agree;
+        }
+        .scrollStp {
+            border-color: $disagree;
+            color: $disagree;
+        }
+        .scrollTop, .scrollBottom {
+            margin: 0px;
+        }
     }
     
     header, nav, section, footer {

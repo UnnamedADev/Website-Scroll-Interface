@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>v0.0.2 - Website Scroll Interface</title>
+    <title>v0.1.1 - Website Scroll Interface</title>
     <link rel="stylesheet" href="style.css">
     <script src="jquery-3.2.1.min.js"></script>
     <script src="scroll.js"></script>
@@ -11,6 +11,16 @@
    <!-- scroll -->
    <button class="bckBtn bckTop">top</button>
    <button class="bckBtn bckBottom">bottom</button>
+   <button class="autoBtn">Auto-scroll</button>
+   <!-- ------ -->
+   <!-- config -->
+   <div class="cfg">
+          <h5>Kierunek</h5>
+           <button class="scrollTop" id="activeBttn">Top</button><button class="scrollBottom">bottom</button>
+           <h5>Prędkość</h5>
+           <input type="range" max="110" min="10" value="40" class="scrollRng"><br>
+           <button class="scrollStrt">Start</button><button class="scrollStp">Stop</button>
+   </div>
    <!-- ------ -->
     <header>
         <h1>Damn site</h1>
